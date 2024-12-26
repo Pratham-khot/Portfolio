@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+            --primary-bg-color: #e9ebec;
+            --theme-btn-bg: #fff;
+            --primary-text-color: #3D3D3D;
+            --font:"Poppins",serif;
+}
+:root.dark{
+    --primary-bg-color: #0c151d;
+        --primary-text-color: #f1f2f4;
+        --theme-btn-bg: #171f26;
+}
+body{
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    padding: 4px 30px;
+    transition: background-color 1s ease-in-out;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+header svg{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.div1{
+    border: 2px solid yellow;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    /* animation: rotation 4s ease infinite ; */
+}
+/* @keyframes rotation { */
+    /* from{ */
+        /* rotate: 0deg; */
+        /* background-color: aquamarine;
+        transform: border rotate(0deg); */
+    /* } */
+    /* to{
+        rotate: 360deg; */
+        /* background-color: coral; */
+        /* transform: border rotate(360deg); */
+    /* }
+} */
+.div1 #self{
+    border: 1px solid yellow;
+    border-radius: 50%;
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.div2 #p1{
+    color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 46px;
+    height: 50px;
+    font-family: var(--font);
+    /* width: 2vw; */
+}
+.div2 #p2{
+    color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    height: 33px;
+    font-family: var(--font);
+}
+.list #ul1{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    list-style: none;
+    gap: 10px;
+}
+.mainb1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.mainb1 #b1{
+    width: 290px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #FBD144;
+    border: none;
+    font-family: var(--font);
+}
+.mainb1 #b2 {
+    width: 290px;
+    height: 80px;
+    border-radius: 5px;
+    font-family: var(--font);
+    border: none;
+}
+.work .exp #p1 {
+    color: #575757
+}
+.work .exp #p2, #p3{
+    color:#575757
+}
+.work .proj #p1 {
+    color: #575757
+}
+
+.work .proj #p2, #p3 {
+    color: #575757
+}
+.work .cust #p1 {
+    color: #575757
+}
+
+.work .cust #p2 ,#p3 {
+    color: #575757
+}
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+    font-family: var(--font);
+    color: #575757;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 760px;
+    height: 110px;
+    border-radius: 20px;
+    font-family: var(--font);
+    padding: 0px 484px;
+    margin-left: 100px;
+}
+.port #b1{
+    background-color: #D7D7D7;
+    width: 351px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font);
+}
+.skills p{
+    text-align: center;
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
+    height: 33px;
+}
+.lastsec{
+    height: 826px;
+    width: 757px;
+    display: grid;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2,362px);
+    grid-template-rows: repeat(3,226px);
+    gap: 20px;
+    margin-left: 200px;
+}
+footer p{
+    color: #575757;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+@media screen and (max-width:600px)
+{
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main .div1{
+        justify-content: center;
+        align-items: center;
+    }
+    main .list{
+        justify-content: center;
+        align-items: center;
+        padding-left: 75px;
+    }
+    .mainb1{
+        width: 375px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .lastsec{
+        /* grid-template-columns: 1; */
+        grid-auto-rows: minmax(1fr,226px);
+    }
+}
